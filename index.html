@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="30-day launch plan for Korey Erb selling for PCC-IT International: contract terms to settle, five target lanes, champion sourcing, pitfalls, and a live commission model.">
+  <meta name="color-scheme" content="light dark">
+<title>PCC-IT Launch Orders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#F4F3EF;
+  --surface:#FFFFFF;
+  --surface-2:#EDEBE5;
+  --ink:#15192A;
+  --ink-2:#4B5568;
+  --ink-3:#77808F;
+  --line:#DDD9D0;
+  --line-2:#C8C3B7;
+  --navy:#14213D;
+  --signal:#C1440E;
+  --signal-soft:#F3E2D7;
+  --brass:#8A6F2E;
+  --brass-soft:#F0E7CF;
+  --go:#2F6B4F;
+  --go-soft:#DDEAE0;
+  --crit:#8E1F1F;
+  --crit-soft:#F4DEDC;
+  --shadow:0 1px 2px rgba(20,33,61,.06), 0 8px 24px -12px rgba(20,33,61,.18);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --disp:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --ground:#0E1116;
+    --surface:#161A21;
+    --surface-2:#1D222B;
+    --ink:#E9E7E1;
+    --ink-2:#A6AEBB;
+    --ink-3:#7A8391;
+    --line:#252B35;
+    --line-2:#333B47;
+    --navy:#8FB3D4;
+    --signal:#E87B45;
+    --signal-soft:#2E1E14;
+    --brass:#C9A961;
+    --brass-soft:#2A2415;
+    --go:#6BB68C;
+    --go-soft:#16281E;
+    --crit:#E28B85;
+    --crit-soft:#2C1615;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1116;
+  --surface:#161A21;
+  --surface-2:#1D222B;
+  --ink:#E9E7E1;
+  --ink-2:#A6AEBB;
+  --ink-3:#7A8391;
+  --line:#252B35;
+  --line-2:#333B47;
+  --navy:#8FB3D4;
+  --signal:#E87B45;
+  --signal-soft:#2E1E14;
+  --brass:#C9A961;
+  --brass-soft:#2A2415;
+  --go:#6BB68C;
+  --go-soft:#16281E;
+  --crit:#E28B85;
+  --crit-soft:#2C1615;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16.5px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:0}
+.read{max-width:68ch}
+
+h1,h2,h3,h4{font-family:var(--disp);font-weight:700;line-height:1.14;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.45rem,3.2vw,2rem);letter-spacing:-.018em}
+h3{font-size:1.14rem;letter-spacing:-.008em;font-weight:700}
+h4{font-size:.95rem;letter-spacing:.01em;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--signal);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--signal);outline-offset:2px;border-radius:2px}
+code,.mono{font-family:var(--mono);font-size:.86em;font-variant-numeric:tabular-nums}
+
+.eyebrow{
+  font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--line-2);background:var(--surface)}
+.mast-in{display:flex;flex-direction:column;gap:22px;padding-block:44px 32px}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.mast h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:800;letter-spacing:-.035em}
+.mast .sub{font-family:var(--disp);font-size:clamp(.95rem,2.2vw,1.1rem);font-weight:500;color:var(--ink-2);max-width:60ch;margin-top:10px}
+.stamp{
+  font-family:var(--mono);font-size:.68rem;line-height:1.7;color:var(--ink-3);
+  border:1px solid var(--line-2);padding:8px 12px;white-space:nowrap;
+}
+.stamp b{color:var(--ink-2);font-weight:600}
+
+.headline-nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.hn{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 18px;background:var(--surface)}
+.hn .k{font-family:var(--disp);font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.hn .v{font-family:var(--disp);font-size:1.75rem;font-weight:800;letter-spacing:-.03em;margin-top:4px;font-variant-numeric:tabular-nums;line-height:1.05}
+.hn .n{font-size:.82rem;color:var(--ink-2);line-height:1.45;margin-top:5px;font-family:var(--disp);font-weight:400}
+.hn.warn .v{color:var(--signal)}
+.hn.go .v{color:var(--go)}
+
+/* ---------- nav ---------- */
+nav.jump{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+  background:var(--ground);border-bottom:1px solid var(--line);
+}
+.jump-in{display:flex;gap:2px;overflow-x:auto;padding-block:0;scrollbar-width:thin}
+.jump a{
+  font-family:var(--disp);font-size:.73rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--ink-3);text-decoration:none;padding:13px 13px;white-space:nowrap;border-bottom:2px solid transparent;
+}
+.jump a:hover{color:var(--ink);border-bottom-color:var(--line-2)}
+
+/* ---------- sections ---------- */
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.sec-head{display:flex;gap:16px;align-items:baseline;margin-bottom:8px}
+.sec-num{font-family:var(--mono);font-size:.78rem;font-weight:600;color:var(--signal);padding-top:4px}
+.lede{font-size:1.06rem;color:var(--ink-2);max-width:66ch;margin:14px 0 30px}
+.lede strong{color:var(--ink);font-weight:600}
+
+/* ---------- panels ---------- */
+.panel{background:var(--surface);border:1px solid var(--line);padding:22px 24px}
+.panel + .panel{margin-top:14px}
+.alert{border-left:4px solid var(--signal);background:var(--signal-soft);border:1px solid var(--line);border-left:4px solid var(--signal);padding:20px 24px}
+.alert h3{color:var(--signal);margin-bottom:8px}
+.alert-crit{background:var(--crit-soft);border-left-color:var(--crit)}
+.alert-crit h3{color:var(--crit)}
+.alert-go{background:var(--go-soft);border-left-color:var(--go)}
+.alert-go h3{color:var(--go)}
+.alert p:last-child,.panel p:last-child{margin-bottom:0}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+
+/* ---------- chips ---------- */
+.chip{
+  display:inline-block;font-family:var(--disp);font-size:.66rem;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;padding:3px 8px;border:1px solid currentColor;color:var(--ink-3);
+  vertical-align:middle;
+}
+.chip.sig{color:var(--signal);background:var(--signal-soft)}
+.chip.go{color:var(--go);background:var(--go-soft)}
+.chip.brass{color:var(--brass);background:var(--brass-soft)}
+.chip.crit{color:var(--crit);background:var(--crit-soft)}
+
+/* ---------- tables ---------- */
+.tscroll{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:540px}
+th{
+  font-family:var(--disp);font-size:.67rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);text-align:left;padding:11px 14px;border-bottom:1px solid var(--line-2);vertical-align:bottom;
+}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600}
+tbody tr:hover{background:var(--surface-2)}
+
+/* ---------- numbered question list ---------- */
+.qlist{list-style:none;margin:0;padding:0;counter-reset:q}
+.qlist li{
+  counter-increment:q;display:grid;grid-template-columns:34px 1fr;gap:14px;
+  padding:16px 0;border-bottom:1px solid var(--line);
+}
+.qlist li:last-child{border-bottom:0}
+.qlist li::before{
+  content:counter(q,decimal-leading-zero);font-family:var(--mono);font-size:.78rem;font-weight:600;
+  color:var(--signal);padding-top:3px;
+}
+.qlist .q{font-family:var(--disp);font-weight:600;font-size:1rem;line-height:1.35;margin-bottom:5px;color:var(--ink)}
+.qlist .why{font-size:.93rem;color:var(--ink-2);line-height:1.55}
+.qlist .why b{color:var(--ink);font-weight:600}
+
+/* ---------- day plan ---------- */
+.week{border:1px solid var(--line);background:var(--surface);margin-bottom:14px}
+.week-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  padding:16px 20px;border-bottom:1px solid var(--line);background:var(--surface-2);
+}
+.week-head .wk{font-family:var(--mono);font-size:.74rem;font-weight:600;color:var(--signal);letter-spacing:.04em}
+.week-head h3{flex:1;min-width:180px}
+.week-head .goal{font-family:var(--disp);font-size:.78rem;font-weight:600;color:var(--ink-2);letter-spacing:.02em}
+.tasks{list-style:none;margin:0;padding:6px 0}
+.tasks li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 20px;align-items:start}
+.tasks li:hover{background:var(--surface-2)}
+.tasks input[type=checkbox]{
+  margin:5px 0 0;width:15px;height:15px;accent-color:var(--go);cursor:pointer;flex:none;
+}
+.tasks label{cursor:pointer;font-size:.94rem;line-height:1.52}
+.tasks label .d{font-family:var(--mono);font-size:.72rem;color:var(--ink-3);margin-right:7px;font-weight:600}
+.tasks input:checked + label{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--line-2)}
+.progbar{height:3px;background:var(--line);overflow:hidden}
+.progbar i{display:block;height:100%;background:var(--go);width:0;transition:width .3s ease}
+
+/* ---------- calculator ---------- */
+.calc{display:grid;grid-template-columns:minmax(260px,1fr) minmax(260px,1.1fr);gap:0;border:1px solid var(--line-2);background:var(--surface)}
+.calc-in{padding:24px;border-right:1px solid var(--line)}
+.calc-out{padding:24px;background:var(--surface-2)}
+.toggle{display:flex;border:1px solid var(--line-2);margin-bottom:22px}
+.toggle button{
+  flex:1;font-family:var(--disp);font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:10px 8px;background:transparent;color:var(--ink-3);border:0;cursor:pointer;
+}
+.toggle button[aria-pressed="true"]{background:var(--navy);color:var(--ground)}
+:root[data-theme="dark"] .toggle button[aria-pressed="true"],
+:root:not([data-theme="light"]) .toggle button[aria-pressed="true"]{color:#0E1116}
+.field{margin-bottom:17px}
+.field label{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:var(--disp);font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.field label output{font-family:var(--mono);font-size:.88rem;font-weight:600;color:var(--ink);text-transform:none;letter-spacing:0}
+.field input[type=range]{width:100%;accent-color:var(--signal);cursor:pointer}
+.calc-out .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.calc-out .row span{color:var(--ink-2)}
+.calc-out .row b{font-family:var(--mono);font-weight:600;font-variant-numeric:tabular-nums;font-size:.95rem}
+.calc-out .total{border-bottom:0;padding-top:16px;margin-top:6px;border-top:2px solid var(--line-2)}
+.calc-out .total span{font-family:var(--disp);font-weight:700;color:var(--ink);font-size:.8rem;letter-spacing:.09em;text-transform:uppercase}
+.calc-out .total b{font-size:1.9rem;font-family:var(--disp);font-weight:800;letter-spacing:-.03em;color:var(--signal)}
+.calc-note{font-size:.84rem;color:var(--ink-2);line-height:1.5;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.runrate{background:var(--go-soft);border:1px solid var(--line);padding:12px 14px;margin-top:14px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.runrate span{font-family:var(--disp);font-size:.73rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--go)}
+.runrate b{font-family:var(--mono);font-weight:600;color:var(--go);font-variant-numeric:tabular-nums}
+
+/* ---------- pitfalls ---------- */
+.pit{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);align-items:start}
+.pit:last-child{border-bottom:0}
+.pit .sev{padding-top:2px}
+.pit h4{margin-bottom:4px;font-size:1rem;font-family:var(--disp);font-weight:600;color:var(--ink)}
+.pit p{font-size:.93rem;color:var(--ink-2);margin:0;line-height:1.55}
+.pit p b{color:var(--ink);font-weight:600}
+
+/* ---------- templates ---------- */
+details.tmpl{border:1px solid var(--line);background:var(--surface);margin-bottom:10px}
+details.tmpl summary{
+  cursor:pointer;padding:14px 18px;font-family:var(--disp);font-weight:600;font-size:.96rem;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;
+}
+details.tmpl summary::-webkit-details-marker{display:none}
+details.tmpl summary::after{content:"+";font-family:var(--mono);color:var(--signal);font-size:1.1rem;flex:none}
+details.tmpl[open] summary::after{content:"–"}
+details.tmpl summary:hover{background:var(--surface-2)}
+.tmpl-body{padding:0 18px 18px;border-top:1px solid var(--line)}
+.tmpl-body .meta{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding:10px 0;border-bottom:1px dashed var(--line);margin-bottom:12px}
+pre.copy{
+  font-family:var(--mono);font-size:.8rem;line-height:1.65;white-space:pre-wrap;word-wrap:break-word;
+  background:var(--surface-2);border:1px solid var(--line);padding:15px;margin:0;color:var(--ink);overflow-x:auto;
+}
+.tmpl-body .tip{font-size:.87rem;color:var(--ink-2);margin-top:11px;line-height:1.5}
+.tmpl-body .tip b{color:var(--ink)}
+
+ul.tight{margin:0;padding-left:1.15em}
+ul.tight li{margin-bottom:6px;line-height:1.55}
+ul.tight li:last-child{margin-bottom:0}
+.src{font-size:.84rem;color:var(--ink-2)}
+.src li{margin-bottom:5px}
+
+.lane-card{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--navy);padding:20px}
+.lane-card.l1{border-top-color:var(--go)}
+.lane-card.l2{border-top-color:var(--brass)}
+.lane-card.l3{border-top-color:var(--signal)}
+.lane-card.l4{border-top-color:var(--ink-3)}
+.lane-card.l5{border-top-color:var(--navy)}
+.lane-card h3{margin-bottom:3px}
+.lane-card .speed{font-family:var(--mono);font-size:.73rem;color:var(--ink-3);margin-bottom:12px;display:block}
+.lane-card p{font-size:.92rem;color:var(--ink-2);margin-bottom:12px}
+.lane-card .names{font-size:.86rem;line-height:1.6;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:11px}
+.lane-card .names b{font-family:var(--disp);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:4px}
+
+footer{padding-block:40px 60px;color:var(--ink-3);font-size:.85rem}
+
+@media (max-width:720px){
+  .calc{grid-template-columns:1fr}
+  .calc-in{border-right:0;border-bottom:1px solid var(--line)}
+  .stamp{white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<style>
+  :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap mast-in">
+    <div class="mast-top">
+      <div>
+        <div class="eyebrow">30-Day Launch Plan &middot; Korey Erb &middot; PCC-IT International</div>
+        <h1>Launch Orders</h1>
+        <div class="sub">Everything to settle before you sign, the five lanes that actually pay, and what thirty days of correct execution is genuinely worth.</div>
+      </div>
+      <div class="stamp">
+        PREPARED&nbsp;&nbsp;<b>15 SEP 2026</b><br>
+        PRINCIPAL&nbsp;&nbsp;<b>PCC-IT Int'l</b><br>
+        DBA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Power Capital Mgmt</b><br>
+        UEI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>C1DNZJ5URE84</b><br>
+        CAGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>7ELN7</b>
+      </div>
+    </div>
+    <div class="headline-nums">
+      <div class="hn warn">
+        <div class="k">Open question</div>
+        <div class="v">10&times;</div>
+        <div class="n">The spread between "20% of revenue" and "20% of gross profit." Settle it before signing.</div>
+      </div>
+      <div class="hn go">
+        <div class="k">Fastest legal lane</div>
+        <div class="v">$250K</div>
+        <div class="n">California can award IT contracts to a certified small business with no bid and two quotes. PCC-IT is certified.</div>
+      </div>
+      <div class="hn">
+        <div class="k">Vehicles you inherit</div>
+        <div class="v">39+8</div>
+        <div class="n">39 PEPPM school contracts plus GSA, SEWP, CIO-CS, ITES-SW2, NCPA, OMNIA, Equalis, Texas DIR.</div>
+      </div>
+      <div class="hn">
+        <div class="k">Commission in 30 days</div>
+        <div class="v">$0&ndash;4K</div>
+        <div class="n">Month one builds pipeline. First real checks land month three to five. Plan cash accordingly.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="jump">
+  <div class="wrap jump-in">
+    <a href="#sign">Before you sign</a>
+    <a href="#arsenal">What you sell</a>
+    <a href="#lanes">Five lanes</a>
+    <a href="#champions">Finding champions</a>
+    <a href="#days">The 30 days</a>
+    <a href="#ai">The AI wedge</a>
+    <a href="#pitfalls">Pitfalls</a>
+    <a href="#money">The money</a>
+    <a href="#pack">Outreach pack</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ============ 1 BEFORE YOU SIGN ============ -->
+<section id="sign">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Before you sign</h2></div>
+  <p class="lede">You asked how to get ahead of the contract. This is the answer: <strong>the contract itself is the highest-leverage thing on your desk this week.</strong> Nothing in the next twenty-nine days moves the number as much as getting these twelve answers in writing while you still have negotiating room.</p>
+
+  <div class="alert alert-crit">
+    <h3>The commission math does not work as stated — and you need to know which way</h3>
+    <p>You were told <b>20% on products</b>. In the IT channel, a reseller weighted toward hardware runs roughly a <b>6% profit margin</b> overall, and gross margin on brand-name hardware is commonly single digits to low teens. If "20%" meant 20% of the sell price, PCC-IT would lose money on every hardware order you wrote. So it almost certainly means <b>20% of gross profit</b> — which is a normal, even respectable, channel rate. But look at what the ambiguity is worth:</p>
+    <div class="tscroll" style="margin:16px 0 0">
+      <table>
+        <thead><tr><th>A $500,000 hardware order</th><th class="num">Gross profit @10%</th><th class="num">You are paid</th></tr></thead>
+        <tbody>
+          <tr><td>If 20% is calculated on <b>gross profit</b></td><td class="num">$50,000</td><td class="num"><b>$10,000</b></td></tr>
+          <tr><td>If 20% is calculated on <b>revenue</b></td><td class="num">$50,000</td><td class="num"><b>$100,000</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px">Same deal. Ten times the paycheck. Do not build a forecast, quit an option, or turn down other work until this sentence exists in your contract: <b>"Commission is calculated on ____, defined as ____."</b> Ask them to work one real past deal end-to-end on paper and attach it as an exhibit.</p>
+  </div>
+
+  <h3 style="margin:34px 0 4px">The twelve questions</h3>
+  <p style="color:var(--ink-2);font-size:.95rem;margin-bottom:6px">Send these as one numbered email before you sign. A good partner answers all twelve without friction. How they respond tells you as much as what they say.</p>
+
+  <ol class="qlist">
+    <li><div><div class="q">Is commission calculated on gross revenue or gross profit — and what is the formula?</div><div class="why">Get a worked example attached to the agreement. Ask separately for both the product rate and the services rate, because they may use different bases.</div></div></li>
+    <li><div><div class="q">What counts as a "PCC-IT product" versus resold hardware?</div><div class="why">There may be a real distinction — their own solution bundles, licensing, and subscriptions could genuinely carry 20% of revenue while pass-through hardware carries 20% of margin. <b>If so, that tells you exactly what to sell.</b></div></div></li>
+    <li><div><div class="q">When is commission earned, and when is it paid?</div><div class="why">On booking, on invoice, or on customer payment? Government agencies pay in 60–120 days. A deal you close in November could pay in March. This single answer determines whether you can stop driving.</div></div></li>
+    <li><div><div class="q">What happens to recurring service commission if either party terminates?</div><div class="why"><b>This is the difference between building an annuity and renting one.</b> Most 1099 agreements kill residuals at termination. Ask for post-termination residuals — even a reduced rate or a fixed tail of 24–36 months. Ask now; you will never have more leverage than before signing.</div></div></li>
+    <li><div><div class="q">What is the house-account and excluded-account list?</div><div class="why">Get it in writing <b>before</b> you prospect. Otherwise you will spend two weeks building a target list and discover half of it was never yours to sell.</div></div></li>
+    <li><div><div class="q">What is the deal registration process, and how is territory protected?</div><div class="why">Once you register an account, is it yours? For how long? What happens if another PCC-IT rep — or another TD SYNNEX reseller — has already registered it upstream?</div></div></li>
+    <li><div><div class="q">What is the quote turnaround SLA, and who do I send requests to?</div><div class="why">You will lose deals you earned if a quote takes a week. Get a named person and a committed turnaround. Test it in week one with a real request.</div></div></li>
+    <li><div><div class="q">Which contract vehicles are currently active, with expiration dates?</div><div class="why">Their capabilities page literally reads <b>"Update in Progress."</b> Quoting a dead vehicle to a contracting officer ends your credibility with that agency permanently. See the arsenal section for the specific ones to verify.</div></div></li>
+    <li><div><div class="q">Is there a SEWP VI letter of authorization coming from TD SYNNEX?</div><div class="why">SEWP V was extended only through <b>30 September 2026</b> — fifteen days from now. SEWP VI was awarded in June and goes live <b>1 November 2026</b>. If PCC-IT does not have a SEWP VI LOA, that federal door is shut, and your federal plan has to route through GSA, CIO-CS or ITES-SW2 instead.</div></div></li>
+    <li><div><div class="q">How is Wide Open Sky AI treated — and can it subcontract?</div><div class="why">You own an AI services company; they sell AI services. <b>Get a written carve-out</b> so your own business is never a conflict claim. Then ask the better question: can WOSA be a named subcontractor on PCC-IT engagements? That would turn a conflict into a second revenue line.</div></div></li>
+    <li><div><div class="q">What do I get to represent you with?</div><div class="why">An @itpccit.com address, business cards, a LinkedIn title, the current line card, case studies with permission to name the customer, and three referenceable clients. A rep with a gmail address does not get a meeting with a state CIO.</div></div></li>
+    <li><div><div class="q">Who on the AI and engineering bench can join my calls?</div><div class="why">They claim <b>500+ AI specialists and 200+ data, ERP, network and security specialists.</b> Ask to meet one this month. If that bench is real, it is your biggest asset. If it is a partner network on paper, you need to know before you promise it to a customer.</div></div></li>
+  </ol>
+
+  <div class="panel" style="margin-top:22px">
+    <h3 style="margin-bottom:8px">Also settle, in the same email</h3>
+    <div class="grid2" style="margin-top:12px">
+      <ul class="tight" style="font-size:.93rem;color:var(--ink-2)">
+        <li><b style="color:var(--ink)">Expenses:</b> approval threshold, reimbursement timeline, whether you front travel</li>
+        <li><b style="color:var(--ink)">E&amp;O and general liability:</b> are you covered under their policy, or do you need your own as a 1099?</li>
+        <li><b style="color:var(--ink)">CRM:</b> theirs or yours? If theirs, get access day one. If yours, your HubSpot works fine.</li>
+      </ul>
+      <ul class="tight" style="font-size:.93rem;color:var(--ink-2)">
+        <li><b style="color:var(--ink)">Tools:</b> ask them to fund LinkedIn Sales Navigator and a public-sector data seat (GovSpend or Deltek GovWin). It is cheaper than your ramp.</li>
+        <li><b style="color:var(--ink)">Intro:</b> a working session with whoever runs their TD SYNNEX public-sector desk</li>
+        <li><b style="color:var(--ink)">Taxes:</b> 1099 means self-employment tax on top of income tax. Set aside ~30% quarterly from dollar one.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 ARSENAL ============ -->
+<section id="arsenal">
+  <div class="sec-head"><span class="sec-num">02</span><h2>What you are actually selling</h2></div>
+  <p class="lede">Read past the website. Once you strip the marketing, PCC-IT is a <strong>30-year value-added reseller riding TD SYNNEX's contract vehicles into government, education and mid-market</strong>, with a services and AI wrapper on top. That is not a criticism — it is the map. It tells you exactly where you win and where you will waste a quarter.</p>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3 style="margin-bottom:10px">The genuine assets</h3>
+      <ul class="tight" style="font-size:.93rem;color:var(--ink-2)">
+        <li><b style="color:var(--ink)">1.2 million SKUs across 150+ manufacturers</b> — Samsung, Lenovo, Microsoft, HP, HPE, Dell, Fortinet, Juniper, Oracle, SAP, NVIDIA, VMware, Veeam, Aruba, Ruckus, Extreme, SonicWall</li>
+        <li><b style="color:var(--ink)">Small Business status</b> — SAM-registered, plus <b style="color:var(--ink)">California DGS certified</b> and <b style="color:var(--ink)">Los Angeles County certified</b></li>
+        <li><b style="color:var(--ink)">Real past performance</b> — DEA, California Franchise Tax Board, California DGS, LA County, Olathe (KS) Public Schools, Jersey City Board of Education</li>
+        <li><b style="color:var(--ink)">Ranked #2 nationally by volume in their category (2021) and top 5 (2023)</b> — in the SMB category, which is the honest read of where they operate</li>
+        <li><b style="color:var(--ink)">Deep service catalog</b> — cybersecurity, cloud migration, ERP, managed services, data engineering, app development, AI/ML</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 style="margin-bottom:10px">The strategic correction</h3>
+      <p style="font-size:.93rem;color:var(--ink-2)">You asked for a Fortune 500 plan. Your instinct comes from Axcept, where you sold creative and digital work no one else had. <b style="color:var(--ink)">This is a different product.</b></p>
+      <p style="font-size:.93rem;color:var(--ink-2)">At a Fortune 500, PCC-IT is competing against CDW, SHI, Insight, Connection, Presidio, WWT and ePlus — firms with dedicated on-site account teams, better distribution pricing, and ten-year master agreements already signed. A new 1099 rep with no installed base does not win that on price or relationship.</p>
+      <p style="font-size:.93rem;color:var(--ink-2);margin-bottom:0"><b style="color:var(--ink)">Where PCC-IT beats those firms is precisely where they are too big to bother:</b> sub-$250K set-aside awards, school districts buying off a piggyback contract, county and city purchases through a co-op. Small business status is a door CDW cannot walk through. That is your edge, and it is a real one.</p>
+    </div>
+  </div>
+
+  <h3 style="margin:32px 0 12px">Contract vehicles — verify every one before you quote it</h3>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Vehicle</th><th>Number</th><th>Who can buy</th><th>Status to confirm</th></tr></thead>
+      <tbody>
+        <tr><td>GSA MAS (IT)</td><td class="mono">47QTCA19D00MM</td><td>All federal; state &amp; local via Cooperative Purchasing for IT</td><td><span class="chip sig">Confirm active</span></td></tr>
+        <tr><td>GSA MAS (IT)</td><td class="mono">GS-35F-0563U</td><td>All federal</td><td><span class="chip sig">Confirm active</span></td></tr>
+        <tr><td>NASA SEWP</td><td class="mono">SEWP V</td><td>All federal agencies</td><td><span class="chip crit">V ends 30 Sep · VI live 1 Nov</span></td></tr>
+        <tr><td>NIH CIO-CS</td><td class="mono">CIO-CS</td><td>All federal; strong for HHS, NIH, CMS, FDA</td><td><span class="chip sig">Confirm active</span></td></tr>
+        <tr><td>Army CHESS</td><td class="mono">ITES-SW2</td><td>Army and DoD software</td><td><span class="chip sig">Confirm expiry</span></td></tr>
+        <tr><td>PEPPM (via CSIU &amp; KCSOS)</td><td class="mono">39 contracts</td><td><b>K-12 districts nationally — piggybackable</b></td><td><span class="chip go">Your fastest volume lane</span></td></tr>
+        <tr><td>OMNIA Partners</td><td class="mono">R200803</td><td>Cities, counties, K-12, higher ed, nonprofits</td><td><span class="chip go">Active co-op</span></td></tr>
+        <tr><td>NCPA</td><td class="mono">01-97</td><td>Same — NCPA is now part of OMNIA</td><td><span class="chip go">Active co-op</span></td></tr>
+        <tr><td>Equalis Group</td><td class="mono">EQ-013120-01</td><td>Public agencies and nonprofits</td><td><span class="chip go">Active co-op</span></td></tr>
+        <tr><td>Texas DIR — Cybersecurity HW/SW/Svcs</td><td class="mono">DIR-CPO-4846</td><td>Texas state, local, K-12, higher ed</td><td><span class="chip brass">Exp. 25 Jan 2027</span></td></tr>
+        <tr><td>Texas DIR — Recording &amp; Conferencing</td><td class="mono">DIR-CPO-5077</td><td>Texas public entities</td><td><span class="chip brass">Exp. 4 Aug 2027</span></td></tr>
+        <tr><td>Texas DIR — Misc IT Hardware</td><td class="mono">DIR-CPO-5096</td><td>Texas public entities</td><td><span class="chip crit">Exp. 21 Dec 2026</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:.88rem;color:var(--ink-3);margin-top:10px">All Texas DIR positions are as a <i>reseller</i> under TD SYNNEX as prime — which is also true of most of the rest. Understand that relationship well enough to explain it, because a sharp contracting officer will ask.</p>
+</section>
+
+<!-- ============ 3 LANES ============ -->
+<section id="lanes">
+  <div class="sec-head"><span class="sec-num">03</span><h2>The five lanes</h2></div>
+  <p class="lede">Run all five in parallel, but weight your hours the way the lanes actually pay. <strong>Lanes A through C close in weeks to a few months. Lanes D and E close in quarters.</strong> A rep with no base who spends thirty days only on Fortune 500 has a beautiful pipeline and an empty bank account in March.</p>
+
+  <div class="grid2">
+    <div class="lane-card l1">
+      <h3>Lane A · California state agencies</h3>
+      <span class="speed">CYCLE 30–90 DAYS &nbsp;·&nbsp; HIGHEST PRIORITY</span>
+      <p>California's <b>SB/DVBE Option</b> lets any state department award a contract from <b>$5,000.01 to $249,999.99</b> — for goods, services, or IT — to a certified small business with <b>two quotes and no advertising</b>. PCC-IT is a DGS-certified small business. Departments have participation goals they are measured on and actively need vendors to hit them.</p>
+      <p style="margin-bottom:0">This is the single shortest legal path from cold to closed that exists in your territory, and almost no VAR rep works it properly. Your entry point is not the CIO — it is the department's <b>Small Business Advocate</b>, a published, named person whose actual job is to take your meeting.</p>
+      <div class="names"><b>Start here</b>Franchise Tax Board and DGS (existing PCC-IT past performance) · Dept of Technology · DMV · EDD · Dept of Health Care Services · Dept of Public Health · CDCR · Caltrans · Water Resources · CalPERS · CalSTRS · Dept of Justice · Air Resources Board · State Treasurer · Dept of Insurance · Dept of Education · Lottery · CalVet. Then LA County (separately certified): ISD, Health Services, Public Works, Sheriff, Fire, DPSS.</div>
+    </div>
+
+    <div class="lane-card l2">
+      <h3>Lane B · K-12 districts via PEPPM</h3>
+      <span class="speed">CYCLE 3–10 WEEKS &nbsp;·&nbsp; HIGHEST VOLUME</span>
+      <p>Thirty-nine PEPPM contracts, piggybackable nationally, means a district can buy from PCC-IT <b>without running its own bid</b>. That removes the single biggest obstacle in public sector selling. Districts buy switches, access points, firewalls, Chromebooks, displays and licensing on a predictable annual cycle.</p>
+      <p style="margin-bottom:0">The unfair advantage nobody uses: <b>E-Rate Form 470 filings are public data.</b> Every district that wants to buy network equipment with federal subsidy must post what it needs and who to contact. You can read the entire national demand pipeline for free at <span class="mono">opendata.usac.org</span> and call the named person on the form. Ask whether PCC-IT holds an E-Rate SPIN.</p>
+      <div class="names"><b>Start here</b>Arizona (your backyard): Mesa USD · Tucson USD · Chandler · Gilbert · Peoria · Deer Valley · Paradise Valley · Scottsdale · Dysart · Marana · Humboldt Unified (Prescott Valley) · Prescott USD · Chino Valley. Reference-led: peer districts to <b>Olathe, KS</b> and <b>Jersey City, NJ</b> — ask PCC-IT for those references first. Then California and Texas at scale.</div>
+    </div>
+
+    <div class="lane-card l3">
+      <h3>Lane C · Cities, counties &amp; higher ed via co-op</h3>
+      <span class="speed">CYCLE 6–16 WEEKS</span>
+      <p>OMNIA, NCPA and Equalis members can buy off the awarded contract directly. Same no-bid mechanic as PEPPM, applied to municipal government, county government, community colleges and universities. Public agendas and consent calendars tell you what they are about to buy before they buy it.</p>
+      <p style="margin-bottom:0">Texas is its own version of this through DIR, and Texas is one of the largest public IT markets in the country. DIR publishes vendor sales reports showing which agencies buy what — free competitive intelligence.</p>
+      <div class="names"><b>Start here</b>Arizona: Phoenix · Mesa · Chandler · Scottsdale · Glendale · Tempe · Peoria · Prescott · Prescott Valley · Yavapai County · Maricopa County · Pima County · ASU · NAU · U of A · Yavapai College · Maricopa CCCD. Texas via DIR: HHSC · TxDOT · DPS · Workforce Commission · City of Austin · City of Houston · Harris County · Dallas County · UT System · Texas A&amp;M System.</div>
+    </div>
+
+    <div class="lane-card l4">
+      <h3>Lane D · Federal agencies</h3>
+      <span class="speed">CYCLE 6–18 MONTHS &nbsp;·&nbsp; START NOW, CLOSE LATER</span>
+      <p>Do not cold-email a federal CIO. Every agency has an <b>Office of Small and Disadvantaged Business Utilization</b> whose statutory job is to meet small businesses and route them internally. A capability briefing request to an OSDBU gets a calendar invite where a CIO email gets deleted. PCC-IT's small business status plus real federal past performance is exactly what they are looking for.</p>
+      <p style="margin-bottom:0">Timing note: federal fiscal year ends 30 September — too soon for you to catch this year's money, and the SEWP transition muddies it further. Your window opens with the new fiscal year and SEWP VI go-live in <b>November</b>. Use October to get briefed in.</p>
+      <div class="names"><b>Start here</b>DOJ components — you have DEA past performance to cite: FBI · ATF · USMS · BOP. Then VA (largest small-business IT spender) · HHS/CMS/NIH (CIO-CS is an NIH vehicle) · SSA · Treasury/IRS · DHS and CBP (you are already registered for their career expo — use it) · Army via ITES-SW2 · GSA · Interior · USDA.</div>
+    </div>
+
+    <div class="lane-card l5">
+      <h3>Lane E · Your warm enterprise network</h3>
+      <span class="speed">CYCLE 4–12 MONTHS &nbsp;·&nbsp; HIGHEST TRUST, SPEND IT CAREFULLY</span>
+      <p>This is the asset no one else at PCC-IT has, and the one most easily destroyed. Twenty years of Fortune 100 relationships do not survive a mass email. <b>Reactivate person by person, with no ask in the first message.</b></p>
+      <p>Two multipliers most reps miss. First: <b>the contacts who left are often worth more than the ones who stayed</b> — a director who moved to a 2,000-person company can buy in one meeting what a Fortune 500 takes eighteen months to approve. LinkedIn's "changed jobs in the last 90 days" filter is how you find them. Second: large enterprises run <b>supplier diversity programs with small-business spend targets</b>, and PCC-IT's SB certification is a legitimate reason for those offices to introduce you internally.</p>
+      <p style="margin-bottom:0">And you have a buying center no competing VAR rep calls on: <b>HR, Benefits and Total Rewards.</b> You speak CHRO fluently from LearnYour Benefits. That budget is separate from IT, it is buying AI right now, and open enrollment season is happening this quarter.</p>
+      <div class="names"><b>Start here</b>Aetna/CVS Health · UnitedHealth Group and Optum · Medica · Pfizer · AT&amp;T · Verizon · Bank of America and Merrill · Coca-Cola · 3M · Motorola Solutions · PNC Bank · WEX · CPKC · Graco · Virginia Bankers Association. Route through the human first, the logo second.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 CHAMPIONS ============ -->
+<section id="champions">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Finding the companies, and the people inside them</h2></div>
+  <p class="lede">You asked how to find targets and champions. In public sector the answer is unusual and it works in your favor: <strong>the buyers, their budgets, their current purchases and often their direct email addresses are published by law.</strong> Most reps never look. In enterprise you pay for data instead.</p>
+
+  <h3 style="margin-bottom:12px">Where the names come from</h3>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Source</th><th>What it gives you</th><th class="num">Cost</th></tr></thead>
+      <tbody>
+        <tr><td><b>USAC E-Rate open data</b> <span class="mono">opendata.usac.org</span></td><td>Every K-12 district actively buying network gear, what they need, and the named contact on the filing. The best free lead list in the country for Lane B.</td><td class="num">Free</td></tr>
+        <tr><td><b>USASpending.gov</b></td><td>Search by NAICS (541519, 334111) or PSC (7010, 7021, D318) to see which agencies bought what, from whom, at what price — with the contracting officer named.</td><td class="num">Free</td></tr>
+        <tr><td><b>SAM.gov</b></td><td>Active solicitations, plus entity search to find prime contractors who need small-business subcontractors.</td><td class="num">Free</td></tr>
+        <tr><td><b>Cal eProcure + DGS SB Advocate directory</b></td><td>California bid postings and the published, named Small Business Advocate at every state department. This is Lane A's entire contact list.</td><td class="num">Free</td></tr>
+        <tr><td><b>Texas ESBD + DIR vendor sales reports</b></td><td>Texas solicitations, plus published records of which agencies bought how much IT from which vendor.</td><td class="num">Free</td></tr>
+        <tr><td><b>SBA OSDBU directory</b></td><td>The named small-business officer at every federal agency — your Lane D door.</td><td class="num">Free</td></tr>
+        <tr><td><b>NCES district lookup + district websites</b></td><td>Enrollment and size for targeting; districts publish the Technology Director and Business Manager by name.</td><td class="num">Free</td></tr>
+        <tr><td><b>City/county agendas and consent calendars</b></td><td>IT purchases appear as agenda items weeks before award, with the requesting department named.</td><td class="num">Free</td></tr>
+        <tr><td><b>LinkedIn Sales Navigator</b></td><td>The workhorse. Boolean title search, company filters, and the "changed jobs in last 90 days" filter — new IT leaders buy in their first 120 days.</td><td class="num">~$110/mo</td></tr>
+        <tr><td><b>Apollo.io</b> or your existing <b>Seamless.AI</b></td><td>Verified emails and direct dials at scale. You already run Seamless — use it before buying anything new.</td><td class="num">$0–99/mo</td></tr>
+        <tr><td><b>GovSpend</b> or <b>Deltek GovWin IQ</b></td><td>Purchase-order-level SLED data including buyer names and emails. Genuinely powerful. <b>Ask PCC-IT to fund it</b> — do not buy it yourself.</td><td class="num">Ask PCC-IT</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin:34px 0 12px">Who to call, by segment</h3>
+  <p style="color:var(--ink-2);font-size:.95rem;margin-bottom:14px">Three roles matter in every deal and they are rarely the same person. The <b>economic buyer</b> signs. The <b>technical champion</b> tells you the truth about what is broken. The <b>process owner</b> decides whether the purchase is even legal. Single-threading on one of them is how deals die.</p>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Segment</th><th>Economic buyer</th><th>Technical champion</th><th>Process owner / door</th></tr></thead>
+      <tbody>
+        <tr><td><b>CA state agency</b></td><td>Agency CIO, Deputy Director</td><td>IT Manager, Infrastructure Chief</td><td><b>Small Business Advocate</b>, Procurement Officer</td></tr>
+        <tr><td><b>K-12 district</b></td><td>Superintendent, CFO/Business Manager</td><td>CTO / Director of Technology, Network Manager</td><td>Purchasing Agent, <b>E-Rate Coordinator</b></td></tr>
+        <tr><td><b>City / county</b></td><td>IT Director, City Manager</td><td>Network Admin, Systems Manager</td><td>Purchasing Agent, Board Clerk</td></tr>
+        <tr><td><b>Higher ed</b></td><td>CIO</td><td>Director of Networking, CISO</td><td>Procurement Director, Supplier Diversity</td></tr>
+        <tr><td><b>Federal agency</b></td><td>CIO, Program Manager</td><td>ISSO, Enterprise Architect</td><td><b>OSDBU</b>, Contracting Officer, COR</td></tr>
+        <tr><td><b>Fortune 500 corporate</b></td><td>CIO, CTO, CISO, VP Infrastructure</td><td>Director IT Ops, Enterprise Architect, Security Engineering Mgr</td><td>IT Category Manager, <b>Supplier Diversity Manager</b></td></tr>
+        <tr><td><b>Healthcare payer/provider</b></td><td>CIO, CISO, VP Digital</td><td>Director Infrastructure, Director Clinical Systems</td><td>Value Analysis Committee, Supply Chain</td></tr>
+        <tr><td><b>Bank / financial services</b></td><td>CIO, Head of Technology Risk</td><td>VP Infrastructure, Director Cyber Ops</td><td>Third-Party Risk, Vendor Management Office</td></tr>
+        <tr><td><b>HR / Benefits</b> <span class="chip brass">your edge</span></td><td>CHRO, VP Total Rewards</td><td>Director HR Technology, Benefits Systems Manager</td><td>HR Procurement — separate budget from IT</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert alert-go" style="margin-top:22px">
+    <h3>The single highest-yield move in this whole plan</h3>
+    <p style="margin-bottom:0">Small Business Advocates and OSDBU officers <b>are measured on how many small businesses they meet.</b> You are not interrupting them — you are helping them hit a number. A capability briefing request converts at a multiple of any cold CIO email, and it ends with an internal introduction to the person who actually buys. Twenty of these requests in week one is the difference between three meetings and eighteen.</p>
+  </div>
+</section>
+
+<!-- ============ 5 THE 30 DAYS ============ -->
+<section id="days">
+  <div class="sec-head"><span class="sec-num">05</span><h2>The thirty days</h2></div>
+  <p class="lede">Roughly seven working hours a day, flexed around Uber and Wide Open Sky AI: <strong>two hours building lists, two hours on outreach, two hours on calls, one hour on follow-up and CRM.</strong> Check items off as you go — this page remembers.</p>
+
+  <div class="week">
+    <div class="week-head">
+      <span class="wk">DAYS 01–07</span>
+      <h3>Terms, infrastructure, and the warm network</h3>
+      <span class="goal">GOAL · 30 reactivation notes out, 20 CA advocates contacted</span>
+    </div>
+    <div class="progbar"><i data-prog="w1"></i></div>
+    <ul class="tasks" data-week="w1">
+      <li><input type="checkbox" id="t101"><label for="t101"><span class="d">D1</span>Send the twelve contract questions as one numbered email. Do not sign until question 1 is answered in writing.</label></li>
+      <li><input type="checkbox" id="t102"><label for="t102"><span class="d">D1</span>Request the house-account exclusion list, current line card, active vehicle list with expiry dates, and three referenceable customers.</label></li>
+      <li><input type="checkbox" id="t103"><label for="t103"><span class="d">D1</span>Ask for @itpccit.com email, business cards, and permission to update your LinkedIn title.</label></li>
+      <li><input type="checkbox" id="t104"><label for="t104"><span class="d">D2</span>Build the HubSpot pipeline: Identified → Contacted → Meeting Set → Discovery Done → Quoted → Verbal → Closed. Add a Lane property (A–E).</label></li>
+      <li><input type="checkbox" id="t105"><label for="t105"><span class="d">D2</span>Update LinkedIn headline and About to reflect the PCC-IT role. Post once announcing it — your first post ever to 1,180 followers is free reach.</label></li>
+      <li><input type="checkbox" id="t106"><label for="t106"><span class="d">D2</span>Start warming the new email domain: 10–15 sends a day for the first week, personalized, before any volume.</label></li>
+      <li><input type="checkbox" id="t107"><label for="t107"><span class="d">D3</span>Pull the CA DGS Small Business Advocate list. Build a 20-department target sheet with named advocate, email, phone.</label></li>
+      <li><input type="checkbox" id="t108"><label for="t108"><span class="d">D3</span>List 30 people from the Axcept and LearnYour Benefits years. Check each on LinkedIn for where they are now.</label></li>
+      <li><input type="checkbox" id="t109"><label for="t109"><span class="d">D4</span>Send 15 warm reactivation notes. No pitch, no ask, no attachment. Just what you are doing now.</label></li>
+      <li><input type="checkbox" id="t110"><label for="t110"><span class="d">D4</span>Send the first 10 CA Small Business Advocate briefing requests.</label></li>
+      <li><input type="checkbox" id="t111"><label for="t111"><span class="d">D5</span>Send the remaining 15 warm notes and 10 advocate requests.</label></li>
+      <li><input type="checkbox" id="t112"><label for="t112"><span class="d">D5</span>Test the quote desk with one real request. Time the response. You now know your true SLA.</label></li>
+      <li><input type="checkbox" id="t113"><label for="t113"><span class="d">D6</span>Draft the AI Readiness Assessment — a 60–90 minute structured workshop. Adapt your WOSA consultation guide; it is 80% there already.</label></li>
+      <li><input type="checkbox" id="t114"><label for="t114"><span class="d">D7</span>Review: replies, meetings booked, what the contract answers changed. Adjust before scaling.</label></li>
+    </ul>
+  </div>
+
+  <div class="week">
+    <div class="week-head">
+      <span class="wk">DAYS 08–14</span>
+      <h3>Public sector volume — where the fast money is</h3>
+      <span class="goal">GOAL · 60 districts sourced, 15 OSDBUs contacted, first 4 meetings held</span>
+    </div>
+    <div class="progbar"><i data-prog="w2"></i></div>
+    <ul class="tasks" data-week="w2">
+      <li><input type="checkbox" id="t201"><label for="t201"><span class="d">D8</span>Mine USAC E-Rate open data for current Form 470 filings in AZ, CA and TX seeking network equipment. Export the contacts.</label></li>
+      <li><input type="checkbox" id="t202"><label for="t202"><span class="d">D8</span>Ask PCC-IT: do we hold an E-Rate SPIN? The answer decides how hard you push this lane.</label></li>
+      <li><input type="checkbox" id="t203"><label for="t203"><span class="d">D9</span>Build a 60-district target sheet: name, enrollment, Technology Director, Business Manager, current E-Rate activity.</label></li>
+      <li><input type="checkbox" id="t204"><label for="t204"><span class="d">D9</span>Request the Olathe and Jersey City references from PCC-IT. A named peer district reference is worth fifty cold emails.</label></li>
+      <li><input type="checkbox" id="t205"><label for="t205"><span class="d">D10</span>Send 30 K-12 emails leading with PEPPM — "you can buy without running a bid" is the whole hook.</label></li>
+      <li><input type="checkbox" id="t206"><label for="t206"><span class="d">D10</span>Start locally and in person: Humboldt Unified and Prescott USD are a short drive. Ask for 20 minutes.</label></li>
+      <li><input type="checkbox" id="t207"><label for="t207"><span class="d">D11</span>Pull the SBA OSDBU directory. Send 15 federal capability briefing requests, leading with DOJ components given the DEA past performance.</label></li>
+      <li><input type="checkbox" id="t208"><label for="t208"><span class="d">D11</span>Run USASpending searches on your NAICS and PSC codes. Note which agencies bought similar and who the contracting officers were.</label></li>
+      <li><input type="checkbox" id="t209"><label for="t209"><span class="d">D12</span>Send 30 more K-12 emails. Call the 10 districts that opened and did not reply.</label></li>
+      <li><input type="checkbox" id="t210"><label for="t210"><span class="d">D12</span>Build the co-op target sheet: 25 AZ and TX cities, counties and colleges. Confirm each one's OMNIA/NCPA/Equalis membership.</label></li>
+      <li><input type="checkbox" id="t211"><label for="t211"><span class="d">D13</span>Hold your first discovery calls from week one. Take notes in HubSpot the same hour, not the next day.</label></li>
+      <li><input type="checkbox" id="t212"><label for="t212"><span class="d">D13</span>Send 25 co-op emails to municipal and higher-ed IT directors.</label></li>
+      <li><input type="checkbox" id="t213"><label for="t213"><span class="d">D14</span>Review: reply rate by lane. Double down on whichever lane is answering. Kill nothing yet.</label></li>
+    </ul>
+  </div>
+
+  <div class="week">
+    <div class="week-head">
+      <span class="wk">DAYS 15–21</span>
+      <h3>Enterprise, the AI wedge, and first quotes</h3>
+      <span class="goal">GOAL · 10 discovery meetings held, 2 quotes issued, 3 AI assessments booked</span>
+    </div>
+    <div class="progbar"><i data-prog="w3"></i></div>
+    <ul class="tasks" data-week="w3">
+      <li><input type="checkbox" id="t301"><label for="t301"><span class="d">D15</span>Work the warm replies. Convert every "good to hear from you" into a 20-minute call, not an email thread.</label></li>
+      <li><input type="checkbox" id="t302"><label for="t302"><span class="d">D15</span>Run the LinkedIn "changed jobs in last 90 days" filter across your network. New leaders have budget and no incumbent loyalty.</label></li>
+      <li><input type="checkbox" id="t303"><label for="t303"><span class="d">D16</span>Identify supplier diversity managers at 12 of your warm Fortune 500 accounts. Send small-business registration requests.</label></li>
+      <li><input type="checkbox" id="t304"><label for="t304"><span class="d">D16</span>Launch the AI Readiness Assessment offer to your warm list and every discovery call that stalls.</label></li>
+      <li><input type="checkbox" id="t305"><label for="t305"><span class="d">D17</span>Open the HR/Benefits lane — 10 CHRO and VP Total Rewards contacts. Open enrollment is happening now; AI in benefits is a live budget line.</label></li>
+      <li><input type="checkbox" id="t306"><label for="t306"><span class="d">D17</span>Get a PCC-IT AI or security engineer on one of your calls. Test the bench and build the relationship.</label></li>
+      <li><input type="checkbox" id="t307"><label for="t307"><span class="d">D18</span>Issue your first two quotes. Register both deals the same day.</label></li>
+      <li><input type="checkbox" id="t308"><label for="t308"><span class="d">D18</span>Post on LinkedIn — something concrete about what actually breaks in AI deployments. Practical beats promotional.</label></li>
+      <li><input type="checkbox" id="t309"><label for="t309"><span class="d">D19</span>Second-touch everyone from weeks one and two who did not reply. The second email outperforms the first more often than reps expect.</label></li>
+      <li><input type="checkbox" id="t310"><label for="t310"><span class="d">D19</span>Multi-thread every live opportunity: add a second and third contact inside each account.</label></li>
+      <li><input type="checkbox" id="t311"><label for="t311"><span class="d">D20</span>Run your first AI Readiness Assessment. Turn its findings into an infrastructure and security bill of materials.</label></li>
+      <li><input type="checkbox" id="t312"><label for="t312"><span class="d">D21</span>Review: which opportunities are real? Be ruthless. A "maybe next year" is not pipeline.</label></li>
+    </ul>
+  </div>
+
+  <div class="week">
+    <div class="week-head">
+      <span class="wk">DAYS 22–30</span>
+      <h3>Convert, and start building the annuity</h3>
+      <span class="goal">GOAL · 4–8 qualified opportunities, 2 services deals in play, month two planned from real data</span>
+    </div>
+    <div class="progbar"><i data-prog="w4"></i></div>
+    <ul class="tasks" data-week="w4">
+      <li><input type="checkbox" id="t401"><label for="t401"><span class="d">D22</span>Push two opportunities specifically toward <b>recurring services</b> — managed security, managed IT, backup and DR. Recurring is the asset.</label></li>
+      <li><input type="checkbox" id="t402"><label for="t402"><span class="d">D22</span>Ask each qualified prospect the closing-path question: "If this is right, what does it take to get a PO issued — and by when?"</label></li>
+      <li><input type="checkbox" id="t403"><label for="t403"><span class="d">D23</span>Chase anything transactional and small enough to close inside the month: a district hardware order off PEPPM, a sub-$250K CA award.</label></li>
+      <li><input type="checkbox" id="t404"><label for="t404"><span class="d">D24</span>Send proposals on everything that has had a real discovery call. Do not wait for a perfect scope.</label></li>
+      <li><input type="checkbox" id="t405"><label for="t405"><span class="d">D25</span>Third-touch the OSDBU and Small Business Advocate list. These are slow but they always answer eventually.</label></li>
+      <li><input type="checkbox" id="t406"><label for="t406"><span class="d">D26</span>Confirm the SEWP VI letter of authorization status. Build the federal plan for November around the real answer.</label></li>
+      <li><input type="checkbox" id="t407"><label for="t407"><span class="d">D27</span>Book the October calendar now: two in-person days in Phoenix, one in Southern California if a CA agency meeting justifies it.</label></li>
+      <li><input type="checkbox" id="t408"><label for="t408"><span class="d">D28</span>Clean the CRM. Every contact tagged by lane, every deal with a real close date and a named champion.</label></li>
+      <li><input type="checkbox" id="t409"><label for="t409"><span class="d">D29</span>Thirty-day review with PCC-IT: what you built, what is in pipeline, and precisely what support is missing. Ask again for the tools.</label></li>
+      <li><input type="checkbox" id="t410"><label for="t410"><span class="d">D30</span>Write month two from actual conversion data, not from this plan. Kill the lane that did not answer; double the one that did.</label></li>
+    </ul>
+  </div>
+
+  <div class="panel" style="margin-top:20px">
+    <h3 style="margin-bottom:10px">What thirty days of correct execution actually produces</h3>
+    <div class="tscroll" style="border:0">
+      <table style="min-width:420px">
+        <tbody>
+          <tr><td>Targeted contacts identified</td><td class="num"><b>250–400</b></td></tr>
+          <tr><td>Personalized outreach touches sent</td><td class="num"><b>180–250</b></td></tr>
+          <tr><td>Discovery meetings held</td><td class="num"><b>12–20</b></td></tr>
+          <tr><td>Qualified opportunities created</td><td class="num"><b>4–8</b></td></tr>
+          <tr><td>Quotes issued</td><td class="num"><b>2–4</b></td></tr>
+          <tr><td>Pipeline value created</td><td class="num"><b>$300K–$800K</b></td></tr>
+          <tr><td><b>Commission actually earned in month one</b></td><td class="num"><b style="color:var(--signal)">$0–$4,000</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.9rem;color:var(--ink-2);margin:12px 0 0">That last line is not pessimism, it is arithmetic. Enterprise deals between $100K and $500K average six to nine months; anything over $500K averages nine to twelve. The only month-one money comes from a small transactional order off a co-op contract. <b style="color:var(--ink)">Your three-part stack — Uber for immediate cash, WOSA for the middle, PCC-IT compounding behind it — is exactly the right structure for this reality.</b></p>
+  </div>
+</section>
+
+<!-- ============ 6 AI WEDGE ============ -->
+<section id="ai">
+  <div class="sec-head"><span class="sec-num">06</span><h2>The AI wedge</h2></div>
+  <p class="lede">You asked how to use Wide Open Sky AI to sell PCC-IT's AI offering. The honest answer is better than the obvious one: <strong>your AI background is not primarily how you sell AI. It is how you get meetings that end in infrastructure orders.</strong></p>
+
+  <div class="grid2">
+    <div class="panel">
+      <h3 style="margin-bottom:10px">Why it works</h3>
+      <p style="font-size:.94rem;color:var(--ink-2)">Every VAR rep in the country is now saying the word "AI." Almost none of them have deployed anything. You have: a live conversational avatar in production for a real client, a HubSpot-integrated lead pipeline, workflow automation, performance dashboards, and a knowledge base you wrote yourself.</p>
+      <p style="font-size:.94rem;color:var(--ink-2);margin-bottom:0">That means you can say something no catalog rep can say, and have it be true: <b style="color:var(--ink)">"I've built and shipped this. It's never the model that breaks — it's the data, the network, and the security review."</b> That one sentence separates you from everyone else who called that CIO this month.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-bottom:10px">Why it pays</h3>
+      <p style="font-size:.94rem;color:var(--ink-2)">Nobody buys a $2M AI program from a rep they met last week. But an honest AI conversation surfaces, every single time: the data isn't clean, the network can't carry it, security won't approve it, and there isn't enough compute.</p>
+      <p style="font-size:.94rem;color:var(--ink-2);margin-bottom:0">Those four findings map directly to data engineering, network refresh, zero-trust and penetration testing, and NVIDIA/Dell/HPE/Lenovo hardware — <b style="color:var(--ink)">all of it on PCC-IT's line card, all of it on a contract vehicle, all of it closeable in a fraction of the time.</b> Lead with AI. Close on infrastructure.</p>
+    </div>
+  </div>
+
+  <h3 style="margin:30px 0 12px">Four plays, in order of value</h3>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Play</th><th>What it is</th><th>Why it beats the alternative</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>The AI Readiness Assessment</b> <span class="chip go">build this first</span></td>
+          <td>A structured 60–90 minute working session. Outputs: a use-case shortlist, a data readiness score, an infrastructure gap list, a security gap list, and a rough cost model. Free, or $2,500 to qualify harder.</td>
+          <td>It is a reason to meet that isn't a pitch, a qualification tool, and a bill-of-materials generator in one. Your WOSA free-consultation guide and fit scorecard are most of the work already done.</td>
+        </tr>
+        <tr>
+          <td><b>The live demo opener</b></td>
+          <td>Send a working avatar link before the meeting: "Before we talk, spend ninety seconds here." Then discuss what they noticed.</td>
+          <td>A link that does something gets replies a deck never will. <b>Clear WOSA asset use with PCC-IT first</b> — or ask them to build you a branded one, which is a small request and a fair test of whether that AI bench is real.</td>
+        </tr>
+        <tr>
+          <td><b>The benefits and HR lane</b></td>
+          <td>Benefits navigation assistants, claims triage, member service deflection, open-enrollment support — sold to CHRO and VP Total Rewards, not IT.</td>
+          <td>You are fluent in that buyer from LearnYour Benefits. It is a separate budget from IT, it is actively buying AI, and open enrollment is this quarter. <b>No competing VAR rep is in that room.</b></td>
+        </tr>
+        <tr>
+          <td><b>Pull-through discipline</b></td>
+          <td>Log every AI conversation against the infrastructure it implies, and quote the infrastructure while the AI decision is still being made.</td>
+          <td>AI programs take a year to approve. The GPU servers, the storage, the switches and the pen test can be quoted next week — and that is where your actual commission lives.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="alert" style="margin-top:20px">
+    <h3>Guardrail</h3>
+    <p style="margin-bottom:0">Wide Open Sky AI is your strongest differentiator and your biggest contractual exposure at the same time. Disclose it, get the carve-out in writing, and never present WOSA-built work as a PCC-IT product. The clean framing is: <b>"I run an AI practice. I joined PCC-IT because they have the infrastructure, the contract vehicles, and the engineering bench to take what I build to your scale."</b> That is true, it is not a conflict, and it is a better story than either company has alone.</p>
+  </div>
+</section>
+
+<!-- ============ 7 PITFALLS ============ -->
+<section id="pitfalls">
+  <div class="sec-head"><span class="sec-num">07</span><h2>Pitfalls</h2></div>
+  <p class="lede">Sorted by what they cost you. <strong>Deal-enders</strong> can end the relationship or the income. <strong>Expensive</strong> costs you a quarter. <strong>Friction</strong> costs you deals you had already earned.</p>
+
+  <div class="panel">
+    <div class="pit"><div class="sev"><span class="chip crit">Deal-ender</span></div><div><h4>Signing before the commission base is defined</h4><p>Covered above, and worth repeating because it is the only mistake here you cannot undo. <b>A tenfold ambiguity in writing is not a detail.</b></p></div></div>
+    <div class="pit"><div class="sev"><span class="chip crit">Deal-ender</span></div><div><h4>Recurring commission that dies on termination</h4><p>The 15% recurring is the entire long-term case for this job. If it stops the day you stop, you are not building an asset — you are renting one, and you will have no leverage later. Negotiate a residual tail <b>now</b>.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip crit">Deal-ender</span></div><div><h4>An unresolved conflict with Wide Open Sky AI</h4><p>You own a company that sells what your principal sells. Undisclosed, that is a claim waiting to be made against your own business. Disclosed and carved out, it is an advantage.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip crit">Deal-ender</span></div><div><h4>Running out of cash before month five</h4><p>No draw, no base, 1099, and a six-to-nine-month enterprise cycle. First real check lands month three to five, and that assumes commission is paid on invoice rather than on collection. <b>Protect the Uber and WOSA income until a PCC-IT check has actually cleared.</b></p></div></div>
+
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Quoting a dead contract vehicle</h4><p>Their own capabilities page says "Update in Progress." Cite an expired SEWP or DIR contract to a contracting officer and that agency is closed to you permanently. <b>Verify every vehicle before it appears in an email.</b></p></div></div>
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Selling 1.2 million products</h4><p>The catalog is the trap. A rep who can sell anything sells nothing, because no buyer can tell what you are for. <b>Pick three offers and repeat them for ninety days:</b> the AI readiness assessment, a security assessment leading to managed security, and a network refresh on a co-op contract.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Spending thirty days on cold Fortune 500</h4><p>Where PCC-IT is least differentiated and the incumbents are most entrenched. Go there through a warm human or a supplier diversity office, never through a cold email to a CIO who already has an SHI account team on site.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Chasing RFPs you did not help shape</h4><p>A public RFP you learn about from a portal is usually already wired to an incumbent who helped write the requirements. Either shape the spec six months out or use the no-bid lanes. Bidding blind burns days and teaches you nothing.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Burning your warm network with one generic email</h4><p>Twenty years of relationships can be spent in a single afternoon. One at a time, personal, no ask in the first message. <b>These contacts are worth more than the entire rest of the target list combined.</b></p></div></div>
+    <div class="pit"><div class="sev"><span class="chip sig">Expensive</span></div><div><h4>Measuring activity instead of meetings</h4><p>Five hundred emails sent and zero meetings booked is a failure that feels like work. The only week-one metrics that matter are meetings held and opportunities created.</p></div></div>
+
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>A slow quote desk</h4><p>Test it in week one with a real request. If the turnaround is longer than 48 hours, you need to know now and build your own workaround rather than discovering it mid-deal.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>Channel conflict on deal registration</h4><p>The same end customer may already be registered to another TD SYNNEX reseller. Register early, register everything, and confirm in writing.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>Government procurement rules you have not had to know before</h4><p>Many agencies prohibit accepting so much as a lunch. Contacting the wrong person during an active solicitation can disqualify the bid entirely. <b>During any open procurement, talk only to the contracting officer.</b></p></div></div>
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>Cold email to .gov landing in quarantine</h4><p>A brand-new sending domain blasting government addresses gets filtered. Warm it: 10–15 personalized sends a day for the first week or two, then scale.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>Single-threading</h4><p>One champion who takes another job takes the deal with them. Three contacts per live opportunity, minimum — and in public sector, one of them should always be on the procurement side.</p></div></div>
+    <div class="pit"><div class="sev"><span class="chip">Friction</span></div><div><h4>Forgetting the self-employment tax</h4><p>1099 income carries roughly 15.3% self-employment tax before income tax. A $150,000 1099 year is meaningfully less in hand than a $150,000 salary. Set aside ~30% quarterly from the first check.</p></div></div>
+  </div>
+</section>
+
+<!-- ============ 8 MONEY ============ -->
+<section id="money">
+  <div class="sec-head"><span class="sec-num">08</span><h2>The money</h2></div>
+  <p class="lede">Move the sliders. The two basis toggles are the thing to watch — <strong>they are the same question from section one, and they swing the answer by an order of magnitude.</strong> Defaults are set to a realistic first-year base case on the most likely reading of your terms.</p>
+
+  <div class="calc">
+    <div class="calc-in">
+      <div class="eyebrow" style="margin-bottom:8px">Product commission is paid on</div>
+      <div class="toggle" role="group" aria-label="Product commission basis">
+        <button id="pGP" aria-pressed="true">Gross profit</button>
+        <button id="pREV" aria-pressed="false">Revenue</button>
+      </div>
+      <div class="eyebrow" style="margin-bottom:8px">Services commission is paid on</div>
+      <div class="toggle" role="group" aria-label="Services commission basis">
+        <button id="sGP" aria-pressed="false">Gross profit</button>
+        <button id="sREV" aria-pressed="true">Revenue</button>
+      </div>
+
+      <div class="field">
+        <label for="prodRev">Product revenue closed, year 1 <output id="oProdRev"></output></label>
+        <input type="range" id="prodRev" min="0" max="8000000" step="100000" value="1500000">
+      </div>
+      <div class="field">
+        <label for="gpPct">Blended gross margin on product <output id="oGpPct"></output></label>
+        <input type="range" id="gpPct" min="4" max="25" step="1" value="10">
+      </div>
+      <div class="field">
+        <label for="mrr">Recurring services MRR at year end <output id="oMrr"></output></label>
+        <input type="range" id="mrr" min="0" max="120000" step="1000" value="25000">
+      </div>
+      <div class="field">
+        <label for="months">Average months billed in year 1 <output id="oMonths"></output></label>
+        <input type="range" id="months" min="0" max="12" step="1" value="5">
+      </div>
+      <div class="field">
+        <label for="projRev">One-time project services revenue <output id="oProjRev"></output></label>
+        <input type="range" id="projRev" min="0" max="1500000" step="25000" value="150000">
+      </div>
+      <div class="field" style="margin-bottom:0">
+        <label for="svcGp">Gross margin on services <output id="oSvcGp"></output></label>
+        <input type="range" id="svcGp" min="20" max="60" step="1" value="40">
+      </div>
+    </div>
+
+    <div class="calc-out">
+      <div class="eyebrow" style="margin-bottom:12px">Year one, to you</div>
+      <div class="row"><span>Product commission @ 20%</span><b id="rProd"></b></div>
+      <div class="row"><span>Recurring services @ 15%</span><b id="rRec"></b></div>
+      <div class="row"><span>Project services @ 15%</span><b id="rProj"></b></div>
+      <div class="row total"><span>Year 1 total</span><b id="rTotal"></b></div>
+      <div class="runrate"><span>Recurring run-rate into year 2</span><b id="rRun"></b></div>
+      <div class="calc-note" id="basisNote"></div>
+    </div>
+  </div>
+
+  <h3 style="margin:34px 0 12px">Three honest scenarios</h3>
+  <p style="color:var(--ink-2);font-size:.95rem;margin-bottom:14px">Assuming 20% of gross profit on product and 15% of revenue on services — the most likely reading of what you were told, and the calculator's default setting.</p>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Scenario</th><th class="num">Product rev</th><th class="num">Services MRR (yr end)</th><th class="num">Year 1 to you</th><th class="num">Year 2 run-rate</th></tr></thead>
+      <tbody>
+        <tr><td><b>Conservative</b><br><span style="font-size:.85rem;color:var(--ink-2)">A few district and agency hardware orders, two small managed contracts</span></td><td class="num">$600K</td><td class="num">$12K</td><td class="num"><b>~$19,000</b></td><td class="num">~$22K</td></tr>
+        <tr><td><b>Base</b><br><span style="font-size:.85rem;color:var(--ink-2)">Lanes A–C working, four services contracts, two project engagements</span></td><td class="num">$1.5M</td><td class="num">$25K</td><td class="num"><b>~$71,000</b></td><td class="num">~$45K</td></tr>
+        <tr><td><b>Strong</b><br><span style="font-size:.85rem;color:var(--ink-2)">Top-decile first year; a co-op lane compounding plus a real services book</span></td><td class="num">$4M</td><td class="num">$60K</td><td class="num"><b>~$225,000</b></td><td class="num">~$108K</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid2" style="margin-top:20px">
+    <div class="alert">
+      <h3>On your $150K target</h3>
+      <p>You said you would be satisfied at $150,000 in year one with a flexible schedule. On the default basis, that sits above the base case and short of the strong case — <b>possible, but not the way to bet.</b> The realistic band is <b>$60,000–$90,000</b> in year one, with $150,000 becoming likely in year two <i>if</i> you have built recurring services by then.</p>
+      <p style="margin-bottom:0">If PCC-IT confirms in writing that 20% applies to the sell price on some meaningful product category, $150K moves well within reach in year one. That is why question 1 and question 2 matter more than anything else on this page.</p>
+    </div>
+    <div class="alert alert-go">
+      <h3>The lever that changes everything</h3>
+      <p><b>Recurring services commission is the only part of this job that compounds.</b> A single $10,000/month managed services contract pays you roughly $18,000 a year without being re-sold. Five of them is $90,000 a year of income you do not have to go get again.</p>
+      <p style="margin-bottom:0">Hardware closes faster and feels more productive. Services build the asset. <b>Weight your hours roughly 60/40 toward services</b>, even in month one when hardware is the easier yes — and make sure the residual survives termination before you build a book you do not own.</p>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:14px">
+    <h3 style="margin-bottom:8px">About "up to $500,000"</h3>
+    <p style="font-size:.94rem;color:var(--ink-2);margin-bottom:0">On the default basis, $500,000 in commission requires roughly $8–10 million in annual product revenue plus more than $150,000 in monthly recurring services. That is a book of business built over many years, usually inherited. It is a real number for a real person at that firm — it is not a year-one number, and no plan on earth makes it one. Treat it as the ceiling of the role, not the forecast.</p>
+  </div>
+</section>
+
+<!-- ============ 9 PACK ============ -->
+<section id="pack">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Outreach pack</h2></div>
+  <p class="lede">Written to be sent, not admired. Subject lines are lowercase and plain on purpose — they read like a person wrote them, which is the entire point. <strong>Replace every bracket before sending.</strong></p>
+
+  <details class="tmpl" open>
+    <summary>Warm network reactivation <span class="chip go">highest conversion</span></summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: Your Axcept / LearnYour Benefits contacts &nbsp;·&nbsp; SUBJECT: catching up &nbsp;·&nbsp; NO ASK, NO ATTACHMENT</div>
+<pre class="copy">[First name] —
+
+It's been a while. I saw you're at [company] now — congratulations on
+the move.
+
+Quick update from my side: after LearnYour Benefits I spent the last
+couple of years building an AI practice, and I've just come on board
+with PCC-IT International, a 30-year IT firm out of California. I'm
+handling enterprise and public sector for them — AI, cybersecurity,
+infrastructure, managed services.
+
+No pitch here. I've just been reconnecting with people I enjoyed
+working with, and you were near the top of that list. If you've got
+20 minutes in the next couple of weeks I'd like to hear what you're
+working on.
+
+And if there's someone in your world I should know, I'd take the
+introduction gratefully.
+
+Korey
+
+Korey Erb | PCC-IT International
+952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> it names where they went, which proves you looked. It removes the ask, which removes the pressure. And it ends with a referral request that is easy to say yes to even from someone with no need of their own. Send fifteen a day, personalized, never as a blast.</div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>California Small Business Advocate <span class="chip go">fastest lane</span></summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: Dept. Small Business Advocate &nbsp;·&nbsp; SUBJECT: certified SB — capability briefing request</div>
+<pre class="copy">[Name] —
+
+I represent PCC-IT International (dba Power Capital Management), a
+DGS-certified small business and 30-year IT provider. UEI C1DNZJ5URE84,
+CAGE 7ELN7.
+
+I'd like to request a short capability briefing so [department] has us
+on file for SB/DVBE Option opportunities. We cover hardware, software,
+cybersecurity, cloud, ERP, managed services and AI/ML — over 1.2 million
+products across 150+ manufacturers — and we hold GSA MAS plus statewide
+and cooperative vehicles.
+
+Relevant past performance in California: Department of General Services,
+Franchise Tax Board, and Los Angeles County, where we are also a
+certified small business.
+
+Fifteen or twenty minutes, whenever suits you. I can also send our
+capability statement ahead of time if that's more useful.
+
+Korey Erb
+PCC-IT International | 952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> it speaks their language — certification, UEI, CAGE, SB/DVBE Option — and it asks for the one thing their job description says to do. The California past performance does most of the persuading. <b>Verify PCC-IT's certification is current before you send this.</b></div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>Federal OSDBU capability briefing</summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: Agency OSDBU / Small Business Specialist &nbsp;·&nbsp; SUBJECT: small business capability briefing — IT and AI</div>
+<pre class="copy">[Name] —
+
+I'm requesting a capability briefing on behalf of PCC-IT International
+(dba Power Capital Management), a small business IT provider of nearly
+30 years. UEI C1DNZJ5URE84, CAGE 7ELN7.
+
+Vehicles: GSA MAS 47QTCA19D00MM and GS-35F-0563U, NIH CIO-CS, and
+[SEWP — confirm status before sending].
+
+NAICS: 541511, 541512, 541513, 541519, 334111, 518210.
+PSC: 7010, 7021, 7025, 7030, D318, D399, R425.
+
+Federal past performance includes the Drug Enforcement Administration.
+Core areas are AI/ML, cybersecurity and zero trust, cloud migration,
+network infrastructure, ERP, and managed services, with more than 500
+AI and 200 data, network and security specialists on staff.
+
+I'd welcome twenty minutes at your convenience, and I'm also glad to be
+considered for subcontracting where a prime needs small business
+participation.
+
+Korey Erb
+PCC-IT International | 952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> NAICS and PSC codes signal you know how they buy. The subcontracting line opens a second door — primes chasing small business participation goals are often faster to say yes than the agency itself. <b>Do not send until every vehicle listed is verified current.</b></div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>K-12 technology director — the PEPPM hook</summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: District CTO / Director of Technology &nbsp;·&nbsp; SUBJECT: [district] — no bid required</div>
+<pre class="copy">[First name] —
+
+Short version: [district] can purchase from us without running its own
+bid. We hold 39 PEPPM contracts through CSIU and KCSOS, all
+piggybackable nationally, plus OMNIA, NCPA and Equalis.
+
+That covers switching, wireless, firewalls, endpoints, displays and
+licensing — Juniper, Aruba, Ruckus, Extreme, Fortinet, HP, Lenovo,
+Dell, Samsung, Microsoft, and about 140 other manufacturers.
+
+[If from an E-Rate 470: I saw your Form 470 for [category] — the timing
+seemed worth a note.]
+
+We've done this work for districts including Olathe Public Schools in
+Kansas and the Jersey City Board of Education.
+
+Would fifteen minutes be useful? If it's easier, tell me what you're
+scoping this year and I'll send pricing without a meeting.
+
+Korey Erb
+PCC-IT International | 952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> "no bid required" is the single most valuable sentence you can say to a district technology director, because the bid process is what stands between them and everything they need. The E-Rate line proves you did homework. The offer to quote without a meeting respects that they are busy — and quoting is how you get the meeting anyway.</div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>Enterprise supplier diversity office</summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: Supplier Diversity Manager, Fortune 500 &nbsp;·&nbsp; SUBJECT: small business IT supplier registration</div>
+<pre class="copy">[Name] —
+
+I'd like to register PCC-IT International as a certified small business
+IT supplier with [company].
+
+We're a 30-year IT provider — SAM-registered small business, certified
+by California DGS and Los Angeles County — covering hardware and
+software resale across 150+ manufacturers, cybersecurity, cloud, ERP,
+managed services and AI/ML.
+
+I spent twenty years selling technology and digital programs into
+[Aetna / UnitedHealth / your relevant logo] and companies like yours, so
+I know the difference between being on a supplier list and actually
+being useful. I'd like to be the second one.
+
+What's your registration process, and is there a category owner on the
+IT side I should be introduced to?
+
+Korey Erb
+PCC-IT International | 952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> supplier diversity offices have spend targets and need qualified suppliers to hit them — you are solving their problem. The "on a list vs. actually useful" line is disarming and true. The closing question asks for the internal introduction, which is the real objective.</div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>Cold CIO / CISO — the AI wedge</summary>
+    <div class="tmpl-body">
+      <div class="meta">TO: CIO, CISO, VP Infrastructure &nbsp;·&nbsp; SUBJECT: what breaks in AI projects</div>
+<pre class="copy">[First name] —
+
+I built and deployed AI systems for clients before I joined PCC-IT, and
+the same thing went wrong every time. It was never the model. It was
+the data, the network, and the security review.
+
+I put that into a 90-minute readiness assessment — use cases worth
+doing, what your data can actually support, the infrastructure and
+security gaps in the way, and a real cost range. No cost, no
+obligation, and you keep the output whether or not we work together.
+
+PCC-IT is a 30-year IT provider with 500+ AI specialists, full
+cybersecurity and infrastructure practices, and GSA and cooperative
+contract vehicles when it's time to buy anything.
+
+Worth 90 minutes?
+
+Korey Erb
+PCC-IT International | 952.484.8059</pre>
+      <div class="tip"><b>Why it works:</b> the opening line is a specific, credible, slightly contrarian claim that only a practitioner would make — it reads as expertise rather than marketing. The assessment is a give, not an ask. And "you keep the output" removes the last reason to say no.</div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>LinkedIn connection notes — three variants</summary>
+    <div class="tmpl-body">
+      <div class="meta">300 CHARACTER LIMIT &nbsp;·&nbsp; SEND WITH A NOTE, ALWAYS</div>
+<pre class="copy">WARM / RECONNECT
+[Name] — we crossed paths during my Axcept days. I've moved into
+enterprise IT and AI with PCC-IT International. Reconnecting with
+people I liked working with. Hope [company] is treating you well.
+
+PUBLIC SECTOR
+[Name] — I handle public sector for PCC-IT International, a certified
+small business IT provider on GSA, PEPPM and the major co-ops.
+Connecting in case [agency/district] ever needs a no-bid path to
+hardware or security work.
+
+AI / TECHNICAL
+[Name] — I deployed AI systems before I joined PCC-IT, so I mostly
+have opinions about why they stall. Connecting to follow your work
+on [specific thing].</pre>
+      <div class="tip"><b>Why it works:</b> each one gives a reason you are connecting that is about them, not about your quota. A blank connection request from a salesperson is ignored; a specific one gets accepted. <b>Reference something real in the third variant or skip it.</b></div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>Discovery call framework — 25 minutes</summary>
+    <div class="tmpl-body">
+      <div class="meta">STRUCTURE, NOT A SCRIPT &nbsp;·&nbsp; TALK LESS THAN HALF THE TIME</div>
+<pre class="copy">0–2   FRAME
+      "I've got 25 minutes on the calendar. I'd like to spend most of
+      it understanding what you're dealing with, and I'll tell you
+      honestly whether we're useful. Fair?"
+
+2–10  SITUATION — let them talk
+      What's on your roadmap for the next two or three quarters?
+      What's driving that — a mandate, a refresh cycle, an incident,
+      a budget window?
+      How do you buy today? Who do you buy through?
+      What's the part of your environment you'd fix first if the
+      money appeared tomorrow?
+
+10–18 CONSEQUENCE — this is where deals are made
+      What happens if that doesn't get done this year?
+      Who else feels it when it goes wrong?
+      Has anyone tried to fix it before? What stopped it?
+
+18–22 FIT — be willing to say no
+      "Two of those we're strong on. The third I'd send you elsewhere
+      for." (Say this when it's true. It buys you everything later.)
+
+22–25 PATH
+      "If this turns out to be right, what does it take to get a PO
+      issued — and by when?"
+      Who else needs to be in the next conversation?
+      Agree the specific next step and date before you hang up.
+
+ALWAYS  Log it in HubSpot the same hour. Send the recap email the
+        same day, with the next step and date in the first line.</pre>
+      <div class="tip"><b>Why it works:</b> the consequence block is what separates a pleasant call from a qualified opportunity — situation questions tell you what they want, consequence questions tell you whether they will actually spend. Naming one thing you are <i>not</i> right for is the fastest way to be believed about the things you are. And the PO question at minute 22 surfaces the procurement path while it is still cheap to learn.</div>
+    </div>
+  </details>
+
+  <details class="tmpl">
+    <summary>Voicemail — 18 seconds</summary>
+    <div class="tmpl-body">
+      <div class="meta">ALWAYS PAIRED WITH AN EMAIL SENT THE SAME MINUTE</div>
+<pre class="copy">"[First name], Korey Erb with PCC-IT International, 952.484.8059.
+
+I'm calling because [district/agency/company] can buy from us without
+running a bid — we're on PEPPM and the major co-ops.
+
+I've sent you a short email with the details. If it's not relevant,
+reply and tell me and I'll stop.
+
+952.484.8059. Thanks."</pre>
+      <div class="tip"><b>Why it works:</b> the number twice, the reason in one sentence, and an explicit permission to opt out — which, counterintuitively, gets more replies than a soft close does. Never leave a voicemail without sending the matching email in the same minute; the voicemail exists to get the email opened.</div>
+    </div>
+  </details>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+  <div class="sec-head"><span class="sec-num">—</span><h2>Sources &amp; assumptions</h2></div>
+  <p class="lede">Everything above that is a fact is cited. Everything that is a number I built is labeled as an assumption. <strong>PCC-IT has not published pricing, so all commission modeling uses industry benchmarks.</strong></p>
+  <div class="grid2">
+    <div class="panel">
+      <h4 style="margin-bottom:10px">PCC-IT &amp; contract vehicles</h4>
+      <ul class="tight src">
+        <li><a href="https://itpccit.com/capabilities-statement/">PCC-IT capability statement</a> — UEI, CAGE, NAICS, PSC, vehicles, past performance, SB certifications</li>
+        <li><a href="https://itpccit.com/services-and-solutions/">Services and solutions</a> and <a href="https://itpccit.com/manufacturer-partners/">manufacturer partners</a></li>
+        <li><a href="https://itpccit.com/gsa-contracts/">GSA contracts</a> · <a href="https://itpccit.com/our-experience-use-cases-partial-sampling/">use cases</a> · <a href="https://itpccit.com/">company overview</a></li>
+        <li><a href="https://dir.texas.gov/contracts/vendors/pcc-it-international-dba-power-capital-management">Texas DIR vendor record</a> — contract numbers and expiry dates</li>
+        <li><a href="https://www.sewp.nasa.gov/sewpvi/">NASA SEWP VI</a> · <a href="https://www.nextgov.com/emerging-tech/2026/03/nasa-seeks-extension-sewp-v-sept-30/412062/">SEWP V extension to 30 Sep 2026</a> · <a href="https://www.tdsynnex.com/na/us/td-synnex-public-sector/contracts/sewp-vi-loas-for-authorized-resellers/">TD SYNNEX SEWP VI reseller LOAs</a></li>
+        <li><a href="https://www.dgs.ca.gov/PD/Resources/SCM/TOC/14/14-05-3">California SB/DVBE Option</a> — $5,000.01–$249,999.99, two quotes, no advertising</li>
+        <li><a href="https://www.omniapartners.com/about-us/in-the-news/ncpa-acquisition-offers-additional-value-to-market">OMNIA acquisition of NCPA</a> · <a href="https://www.peppm.org/bidding-information/">PEPPM</a> · <a href="https://equalisgroup.org/">Equalis Group</a></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h4 style="margin-bottom:10px">Pricing &amp; forecast benchmarks</h4>
+      <ul class="tight src">
+        <li><a href="https://www.connectwise.com/blog/how-vars-can-increase-profit-margins">ConnectWise</a> — a 90/10 hardware-weighted VAR sees ~6% profit margin; MSPs ~15%. <b>This is the basis of the commission warning.</b></li>
+        <li><a href="https://www.mydatapath.com/blog/managed-it-services-cost-pricing-guide-2026/">Datapath 2026 MSP pricing</a> — $100–$400 per user per month; $20K–$80K monthly at 200 users</li>
+        <li><a href="https://deepstrike.io/blog/penetration-testing-cost">Penetration testing 2026</a> — $20K–$50K mid-market, $50K–$150K+ enterprise</li>
+        <li><a href="https://aidolsgroup.com/en/blog/category/research-report/ai-consulting-cost-guide/">AI consulting rates 2026</a> — pilots $50K–$250K; single use case $100K–$500K; enterprise $500K–$5M+</li>
+        <li><a href="https://getboomerang.ai/glossaries/b2b-sales-cycle-benchmarks-2026">B2B sales cycle benchmarks 2026</a> — $100–500K deals 6–9 months; $500K+ 9–12+ months</li>
+        <li><a href="https://www.everstage.com/sales-commission/average-sales-commission-rates-by-industry">Commission rate benchmarks by industry</a></li>
+      </ul>
+      <p style="font-size:.85rem;color:var(--ink-3);margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line)"><b>Assumptions I made:</b> 10% blended product gross margin, 40% services gross margin, 20% of gross profit on product, 15% of revenue on services. All are adjustable above — and all should be replaced with PCC-IT's real numbers the moment you have them.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p style="margin:0">Built 15 September 2026 for Korey Erb. Contract vehicle statuses and certifications must be verified with PCC-IT before being quoted to any customer — several are dated, and their own capability page is marked "Update in Progress." Nothing here is legal or financial advice; have counsel review the contract before you sign it.</p>
+</footer>
+
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- checklist persistence ---------- */
+  var KEY="pccit-plan-v1";
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||"{}")||{}; }catch(e){ state={}; }
+
+  function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
+
+  function updateBar(week){
+    var list=document.querySelector('.tasks[data-week="'+week+'"]');
+    var bar=document.querySelector('[data-prog="'+week+'"]');
+    if(!list||!bar) return;
+    var boxes=list.querySelectorAll('input[type=checkbox]');
+    var done=0;
+    for(var i=0;i<boxes.length;i++){ if(boxes[i].checked) done++; }
+    bar.style.width=(boxes.length? (done/boxes.length*100):0)+"%";
+  }
+
+  var allBoxes=document.querySelectorAll('.tasks input[type=checkbox]');
+  for(var i=0;i<allBoxes.length;i++){
+    (function(box){
+      if(state[box.id]) box.checked=true;
+      box.addEventListener("change",function(){
+        state[box.id]=box.checked;
+        save();
+        var wk=box.closest(".tasks").getAttribute("data-week");
+        updateBar(wk);
+      });
+    })(allBoxes[i]);
+  }
+  ["w1","w2","w3","w4"].forEach(updateBar);
+
+  /* ---------- commission model ---------- */
+  var pBasis="gp", sBasis="rev";
+  var els={
+    prodRev:document.getElementById("prodRev"),
+    gpPct:document.getElementById("gpPct"),
+    mrr:document.getElementById("mrr"),
+    months:document.getElementById("months"),
+    projRev:document.getElementById("projRev"),
+    svcGp:document.getElementById("svcGp")
+  };
+  var out={
+    prodRev:document.getElementById("oProdRev"),
+    gpPct:document.getElementById("oGpPct"),
+    mrr:document.getElementById("oMrr"),
+    months:document.getElementById("oMonths"),
+    projRev:document.getElementById("oProjRev"),
+    svcGp:document.getElementById("oSvcGp")
+  };
+  var res={
+    prod:document.getElementById("rProd"),
+    rec:document.getElementById("rRec"),
+    proj:document.getElementById("rProj"),
+    total:document.getElementById("rTotal"),
+    run:document.getElementById("rRun"),
+    note:document.getElementById("basisNote")
+  };
+  var pGP=document.getElementById("pGP"), pREV=document.getElementById("pREV");
+  var sGP=document.getElementById("sGP"), sREV=document.getElementById("sREV");
+
+  function money(n){
+    return "$"+Math.round(n).toLocaleString("en-US");
+  }
+  function moneyShort(n){
+    if(n>=1000000) return "$"+(n/1000000).toFixed(n%1000000===0?0:1)+"M";
+    if(n>=1000) return "$"+Math.round(n/1000)+"K";
+    return "$"+n;
+  }
+
+  function calc(){
+    var pr=+els.prodRev.value, gp=+els.gpPct.value/100;
+    var mrr=+els.mrr.value, mo=+els.months.value;
+    var proj=+els.projRev.value, sgp=+els.svcGp.value/100;
+
+    out.prodRev.textContent=moneyShort(pr);
+    out.gpPct.textContent=(gp*100).toFixed(0)+"%";
+    out.mrr.textContent=moneyShort(mrr)+"/mo";
+    out.months.textContent=mo+" mo";
+    out.projRev.textContent=moneyShort(proj);
+    out.svcGp.textContent=(sgp*100).toFixed(0)+"%";
+
+    var prodBase = pBasis==="gp" ? pr*gp : pr;
+    var recBase  = sBasis==="gp" ? mrr*sgp*mo : mrr*mo;
+    var projBase = sBasis==="gp" ? proj*sgp : proj;
+
+    var cProd=prodBase*0.20, cRec=recBase*0.15, cProj=projBase*0.15;
+    var total=cProd+cRec+cProj;
+    var runAnnual=(sBasis==="gp"? mrr*sgp : mrr)*0.15*12;
+
+    res.prod.textContent=money(cProd);
+    res.rec.textContent=money(cRec);
+    res.proj.textContent=money(cProj);
+    res.total.textContent=money(total);
+    res.run.textContent=money(runAnnual)+"/yr";
+
+    var note;
+    if(pBasis==="gp" && sBasis==="rev"){
+      note="<b>The most likely real-world case</b>, and the one the scenario table below uses. Product commission works out to roughly "+(gp*20).toFixed(1)+"% of the sell price; services pay on top-line monthly revenue, which is standard in agent models.";
+    }else if(pBasis==="gp"){
+      note="<b>Gross profit on both.</b> The conservative floor — plan against this if PCC-IT will not put a definition in writing.";
+    }else if(sBasis==="rev"){
+      note="<b>Revenue on both.</b> Only trust this if PCC-IT confirms it with a worked example. On pass-through hardware it would exceed their own margin, so if they confirm it, it almost certainly applies to one specific product category. Find out which one — and sell that.";
+    }else{
+      note="<b>Revenue on product, gross profit on services.</b> An unusual combination. If this is what they tell you, ask them to show you a paid commission statement.";
+    }
+    res.note.innerHTML=note;
+  }
+
+  function setBasis(which,val){
+    if(which==="p"){
+      pBasis=val;
+      pGP.setAttribute("aria-pressed", val==="gp"?"true":"false");
+      pREV.setAttribute("aria-pressed", val==="rev"?"true":"false");
+    }else{
+      sBasis=val;
+      sGP.setAttribute("aria-pressed", val==="gp"?"true":"false");
+      sREV.setAttribute("aria-pressed", val==="rev"?"true":"false");
+    }
+    calc();
+  }
+  pGP.addEventListener("click",function(){setBasis("p","gp");});
+  pREV.addEventListener("click",function(){setBasis("p","rev");});
+  sGP.addEventListener("click",function(){setBasis("s","gp");});
+  sREV.addEventListener("click",function(){setBasis("s","rev");});
+
+  Object.keys(els).forEach(function(k){
+    els[k].addEventListener("input",calc);
+  });
+  calc();
+})();
+</script>
+</body>
+</html>
